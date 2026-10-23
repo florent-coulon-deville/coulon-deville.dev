@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florent Coulon-Deville — coulon-deville.dev</title>
+  <meta name="description" content="Florent Coulon-Deville — DevOps, CI/CD et développement backend.">
+  <link rel="canonical" href="https://coulon-deville.dev/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1B2559">
+  <meta property="og:title" content="Florent Coulon-Deville">
+  <meta property="og:description" content="DevOps, CI/CD et développement backend.">
+  <meta property="og:url" content="https://coulon-deville.dev/">
+  <meta property="og:image" content="https://coulon-deville.dev/assets/og-image.png">
+  <style>
+    :root { --navy: #1B2559; --navy-2: #2A3775; --text: #FFFFFF; --muted: #C3C8DE; --accent: #FF8A3D; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: var(--navy); color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 32px 16px; gap: 32px; text-align: center;
+    }
+    .logo { width: min(560px, 100%); height: auto; }
+    .tagline { margin: 0; font-size: 1.125rem; color: var(--muted); }
+    .tagline span { color: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    nav a {
+      color: var(--text); text-decoration: none; padding: 12px 20px; min-height: 44px;
+      border: 1px solid var(--navy-2); border-radius: 10px; background: var(--navy-2);
+      font-family: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace; font-size: 0.95rem;
+    }
+    nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+    footer { font-size: 0.85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main style="display: contents">
+    <h1 style="margin: 0"><img class="logo" src="/assets/logo.svg" alt="coulon-deville.dev — Florent Coulon-Deville" width="592" height="120"></h1>
+    <p class="tagline">DevOps <span>·</span> CI/CD <span>·</span> Backend</p>
+    <nav aria-label="Liens">
+      <a href="https://github.com/florent-coulon-deville">&gt; github</a>
+      <a href="/brand/">&gt; brand</a>
+      <!-- <a href="mailto:contact@coulon-deville.dev">&gt; contact</a>  à activer une fois les mails en place -->
+    </nav>
+  </main>
+  <footer>© <span id="y">2026</span> Florent Coulon-Deville</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
